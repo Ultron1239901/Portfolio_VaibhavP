@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+
+   <center><h1>Vaibhav P</h1></center> 
+   <center><h5>Bengaluru | +91 7618724668 | vaishnavprasnnakumars@gmail.com</h5></center> 
+    <hr>
+    <center><a href="https://www.bing.com/images/search?view=detailV2&ccid=NqY3rNMn&id=78456EBFCD91CFD0CF4E8C982A8BC507F0F64B28&thid=OIP.NqY3rNMnx2NXYo3KJfg43gHaHa&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f07%2f33%2fba%2f0733ba760b29378474dea0fdbcb97107.png&exph=1080&expw=1080&q=professional+photo&simid=608029815300643664&FORM=IRPRST&ck=587E728B95D25977BEC925BA8E404870&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"><img class="image" height="200px" src="https://th.bing.com/th/id/OIP.NqY3rNMnx2NXYo3KJfg43gHaHa?cb=iwp2&rs=1&pid=ImgDetMain" alt="not found"></a>
+</center>
+   <div><h3 id="tags">Description:</h3>
+    <p>I am a passionate web developer with a keen interest in creating simple, responsive websites. I enjoy learning new technologies and applying them to real-world projects.</p></div> 
+
+   <div>
+    <h3 id="tags">Skills</h3>
+    <ul style="list-style-type: square">
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
+    </ul>
+   </div> 
+
+    <div><h3 id="tags">Education</h3>
+    <p>Bachelor of Technology in Computer Science<br>
+    Dr. Ambedkar Institute of Technology<br>
+    Expected Graduation: 2027</p>
+</div>
+    <div><h3 id="tags">Contact</h3>
+    <p>Email: <a href="https://www.gmail.com">vaishnavprasannakumars@gmail.com</a><br>
+    Phone: <a href="tel:7618724668">+91 7618724668</a><br>
+    linkedin:<a href="https://www.linkedin.com/in/vaibhav-p-49757a2b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Vaibhav P</a></p>
+</div>
+<footer style="background-color: rgb(170, 158, 158);">
+    <center>
+        <div class="contact-form">
+        <h3>Contact form</h3>
+        <form  class="form" action="" method="POST">
+            <label for="name">Name:</label><br>
+            <input class="boxele"  type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input class="boxele"  type="email" id="email" name="_replyto" required><br>
+            <label for="message">Message:</label><br>
+            <textarea class="boxele" id="message" name="message" rows="4"></textarea><br>
+            <button  id="addBtn" type="submit">Send</button>
+    </div>
+    </center>
+    <center>><p>&copy; 2025 Dr AIT. All rights reserved.</p></center
+ </footer>
+<script>
+    document.getElementById("addBtn").addEventListener("click", ()=>{
+            // alert("Hello")
+            const inp=document.getElementById("name")
+            const task=inp.value.trim()
+            //trim wil remove the whitespaces
+
+
+            /*if true or not null value is given then only*/
+            if(task){
+                
+                const li=document.createElement("li")
+                li.textContent=task
+
+                //add to unorder list
+               document.getElementById("tasklist").appendChild(li)
+               inp.value=""
+               let para=document.getElementById("Para")
+               para.innerHTML="Task completed"
+
+            }
+            else{
+                alert("No null character")
+            }
+        })
+</script>
+</body>
+</html>

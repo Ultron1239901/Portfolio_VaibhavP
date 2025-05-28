@@ -1,0 +1,45 @@
+.contact-form{
+    display:inline-block;
+    background-color: #b0d4a7;
+    margin:30px;
+    padding:20px;
+    border:3px solid blue;
+    border-radius:1%;
+
+}
+.image{
+    border-radius: 50%;
+    border: 1px solid;
+}
+body{
+    background: linear-gradient( rgb(162, 162, 202),rgb(90, 122, 90));
+    margin: 40px 40px 30px 30px;padding: 0;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label{
+    background: rgb(112, 230, 161) ;
+    color: rgb(119, 0, 255);
+    align-content;
+    border: 2% solid;
+
+}
+.boxele:hover{
+    background-color: #9ee3e5;
+    border: 2px solid;
+    box-shadow: #b0d4a7;
+
+}
+.boxele{
+    /* background-color: #9ee3e5; */
+    border: 2px solid;
+    margin: 3px;
+}
+.form{
+    align-content: flex-end;
+}
+
+#tags{
+    margin: 10px;
+    padding: 2px;
+    border:3px solid rgb(124, 124, 199)
+    
+}
