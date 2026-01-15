@@ -43,7 +43,6 @@
             <div class="profile-section">
                 <div class="profile-image-container">
                     <div class="profile-image-wrapper">
-                        <!-- Replace with your actual image path -->
                         <img src="Gemini_Generated_Image_cstfshcstfshcstf.png"
                              alt="Vaibhav P - Computer Science Engineering Student" 
                              class="profile-image">
@@ -599,9 +598,19 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form" id="contactForm"
+                   <form class="contact-form" id="contactForm"
       action="https://formsubmit.co/vaibhavp9901@gmail.com"
       method="POST">
+
+    <!-- FormSubmit required hidden fields -->
+    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://ultron1239901.github.io/Portfolio_VaibhavP/#contact">
+
+
+    <!-- Honeypot field (anti-spam) -->
+    <input type="text" name="_honey" style="display:none">
 
     <div class="form-row">
         <div class="form-group">
@@ -624,10 +633,6 @@
         <label for="message">Message *</label>
         <textarea id="message" name="message" rows="5" required></textarea>
     </div>
-						
-    <input type="hidden" name="_subject" value="New Contact Form Submission">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
 
     <div class="form-footer">
         <button type="submit" class="btn btn-primary">
@@ -636,6 +641,7 @@
         <p class="form-note">All fields marked with * are required</p>
     </div>
 </form>
+
                 </div>
             </div>
         </section>
